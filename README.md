@@ -93,4 +93,4 @@ If you'd like to contribute to Tegen, please follow these steps:
 
 ## License
 
-Tegen is open-source and licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+Tegen is open-source and licensed under the GNU General Public License v3.0 . See the [LICENSE](LICENSE) file for more information.
