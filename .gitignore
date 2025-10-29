@@ -1,2 +1,51 @@
-/build/
-/out/
+# CMake generated files
+build/
+bin/
+lib/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_CPack_Packages/
+*.cmake.in
+*.dir/
+
+# Executables and libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Object files
+*.o
+*.obj
+*.lo
+
+# IDE specific files (e.g., Visual Studio, VS Code)
+.vs/
+.vscode/
+*.suo
+*.user
+*.ncb
+*.opensdf
+*.sdf
+*.ipch
+
+# Temporary files
+*~
+*.bak
+*.swp
+*.tmp
+*.log
+
+# C++ specific temporary files
+*.pch
+*.gch
+
+# Other common ignored files
+.DS_Store
+Thumbs.db
