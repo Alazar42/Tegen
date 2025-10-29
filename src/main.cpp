@@ -5,7 +5,7 @@ using json = nlohmann::json; // alias for ease of use
 int main(int argc, char const *argv[]) {
     PackageManager manager;
 
-    // Handle the -h flag for help
+    // Handle -h flag for help
     if (argc == 2 && std::string(argv[1]) == "-h") {
         std::cout << "Usage: Tegen <command> [args]" << std::endl;
         std::cout << "Available commands:" << std::endl;
@@ -14,7 +14,14 @@ int main(int argc, char const *argv[]) {
         std::cout << "  list              List all dependencies from TegenConfig.json." << std::endl;
         std::cout << "  build             Build the project using CMake." << std::endl;
         std::cout << "  run               Run the built project." << std::endl;
+        std::cout << "  --version         Show the current Tegen version." << std::endl;
         std::cout << "  -h                Show this help message." << std::endl;
+        return 0;
+    }
+
+    // Handle --version
+    if (argc == 2 && std::string(argv[1]) == "--version") {
+        std::cout << "tegen version " << PACKAGE_VERSION << std::endl;
         return 0;
     }
 

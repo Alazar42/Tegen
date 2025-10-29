@@ -13,6 +13,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(tegen src/main.cpp)
 target_include_directories(tegen PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
+add_compile_definitions(PACKAGE_VERSION="${PROJECT_VERSION}")
+
 # -------------------------
 # Install target (for Linux)
 # -------------------------

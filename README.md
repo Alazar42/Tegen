@@ -1,6 +1,6 @@
 # Tegen
 
-![Tegen Logo](https://i.ibb.co/QYtzFXx/Tegen.png)
+![Tegen Logo](https://i.ibb.co/Y7h4PJn2/unnamed-removebg-preview.png)
 
 Tegen is a C++ package manager and project management tool designed to simplify the process of managing dependencies, building, and running projects. It helps you create and manage C++ projects with ease by automating common tasks such as installation of packages, building projects using CMake, and managing project configurations.
 
@@ -24,9 +24,14 @@ mkdir build && cd build
 cmake ..
 make
 sudo make install
-```
+````
 
 ## Usage
+
+### General Commands
+
+* `-h` : Show help with all available commands.
+* `--version` : Show the current version of Tegen.
 
 ### Initialize a New Project
 
@@ -43,7 +48,7 @@ This will generate a `TegenConfig.json` file with project details, and it will s
 To install a dependency, run:
 
 ```bash
-tegen install <repository>
+tegen install <package-name>
 ```
 
 For example:
@@ -66,21 +71,22 @@ To list all the dependencies in your project, run:
 tegen list
 ```
 
-### Build the Project
+### Build and Run Your Project
 
-To build your project using CMake, run:
+Tegen provides simplified commands for building and running your project:
 
 ```bash
+# Install required dependencies first
+tegen install <package-name>
+
+# Build your project
 tegen build
-```
 
-### Run the Project
-
-To run the built project, execute:
-
-```bash
+# Run the built project
 tegen run
 ```
+
+After following these steps, your project is ready to build and run with Tegen.
 
 ## Contributing
 
@@ -93,4 +99,4 @@ If you'd like to contribute to Tegen, please follow these steps:
 
 ## License
 
-Tegen is open-source and licensed under the GNU General Public License v3.0 . See the [LICENSE](LICENSE) file for more information.
+Tegen is open-source and licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for more information.
