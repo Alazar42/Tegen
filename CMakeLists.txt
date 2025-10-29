@@ -1,17 +1,34 @@
 cmake_minimum_required(VERSION 3.10.0)
-project(Tegen VERSION 0.1.0 LANGUAGES C CXX)
+project(tegen VERSION 0.1.0 LANGUAGES C CXX)
 
-# Set the C++ standard
+# -------------------------
+# C++ settings
+# -------------------------
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Add the executable
-add_executable(Tegen src/main.cpp)
+# -------------------------
+# Executable
+# -------------------------
+add_executable(tegen src/main.cpp)
+target_include_directories(tegen PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
-# Add include directory for headers
-target_include_directories(Tegen PRIVATE ${CMAKE_SOURCE_DIR}/include)
+# -------------------------
+# Install target (for Linux)
+# -------------------------
+# Installs the executable to /usr/local/bin so it's in PATH
+install(TARGETS tegen DESTINATION bin)
 
-# Configure CPack for packaging
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+# -------------------------
+# CPack configuration
+# -------------------------
+set(CPACK_GENERATOR "DEB")
+set(CPACK_PACKAGE_NAME ${PROJECT_NAME})
+set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
+set(CPACK_PACKAGE_CONTACT "Mickyas Tesfaye alazartesfaye42@gmail.com")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Mickyas Tesfaye alazartesfaye42@gmail.com")
+set(CPACK_DEBIAN_PACKAGE_SECTION "utils")
+set(CPACK_DEBIAN_PACKAGE_PRIORITY "optional")
+set(CPACK_DEBIAN_PACKAGE_DEPENDS "") # Add Linux dependencies here if needed
+
 include(CPack)
