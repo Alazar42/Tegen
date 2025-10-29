@@ -1,0 +1,17 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "GCC 15.2.0 x86_64-w64-mingw32 (mingw64)",
+            "description": "Using compilers: C = c:\\msys64\\mingw64\\bin\\gcc.exe, CXX = c:\\msys64\\mingw64\\bin\\g++.exe",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "c:/msys64/mingw64/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "c:/msys64/mingw64/bin/g++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ]
+}

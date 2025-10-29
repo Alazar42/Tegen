@@ -1,0 +1,5 @@
+C:/Users/Micky/Downloads/Tegen-main/Tegen-main/out/build/default/CMakeFiles/Tegen.dir
+C:/Users/Micky/Downloads/Tegen-main/Tegen-main/out/build/default/CMakeFiles/package.dir
+C:/Users/Micky/Downloads/Tegen-main/Tegen-main/out/build/default/CMakeFiles/package_source.dir
+C:/Users/Micky/Downloads/Tegen-main/Tegen-main/out/build/default/CMakeFiles/edit_cache.dir
+C:/Users/Micky/Downloads/Tegen-main/Tegen-main/out/build/default/CMakeFiles/rebuild_cache.dir
